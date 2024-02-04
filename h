@@ -81,6 +81,7 @@ def info1(user,hit,email):
 ⌯ Name —> {response['full_name']}
 ⌯ Reset —> {restt}
    BY : @Qredes
+@Qredes_Python
     '''
 		
 	except:
@@ -91,12 +92,8 @@ def info1(user,hit,email):
 ⌯ Hits —>  {hit}
 ⌯ User —>  {user}
 ⌯ Email —> {email}
-⌯ Date —> H
-⌯ Follower -> H × H <- Following ⌯
-⌯ Id —> H
-⌯ Bio —> H
-⌯ Name —> H
    BY : @Qredes
+@Qredes_Python
     '''
 	try:requests.get(f"https://api.telegram.org/bot{TOK}/sendMessage?chat_id={ID}&text={tlg}")
 	except:info1(user,hit,email)
